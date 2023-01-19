@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Edu+QLD+Beginner&display=swap');
+
+/* font-family: 'Berkshire Swash', cursive;
+font-family: 'Edu QLD Beginner', cursive;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-size: 1.25rem;
+
+
+}
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to right, #041308, #0b3317);
+}
+
+.left-text {
+    flex-basis: 30%;
+    color: white;
+
+
+}
+
+
+.heading {
+    font-weight: 500;
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    font-size: 55px;
+    padding: 10px;
+}
+
+.left-text p {
+    font-family: 'Edu QLD Beginner', cursive;
+    font-weight: 300;
+    text-align: center;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.gallery {
+    flex-basis: 50%;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 120px;
+    margin: 20px;
+
+    padding: 12px;
+}
+
+.box {
+    background-size: cover;
+    background-position: top;
+    color: white;
+    font-size: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #093803;
+    background-blend-mode: luminosity;
+}
+
+.box:hover {
+    background-blend-mode: normal;
+    border: #ffffff;
+    border-style: double;
+    background-position: bottom;
+    transition: all 1s ease-in-out;
+    cursor: ne-resize;
+}
+
+.row-2 {
+
+    grid-row: span 2;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
